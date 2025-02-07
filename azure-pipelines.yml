@@ -10,7 +10,7 @@ jobs:
 - job: BuildJob
   displayName: "Build Job"
   pool:
-    vmImage: ubuntu-latest
+    vmImage: 'ubuntu-latest'
   steps:
   - task: Maven@3
     inputs:
@@ -26,6 +26,6 @@ jobs:
 - job: TestJob
   displayName: "Test Job"
   pool:
-    vmImage: ubuntu-latest
+    vmImage: 'ubuntu-latest'
   steps:
   - script: echo "Running tests"
